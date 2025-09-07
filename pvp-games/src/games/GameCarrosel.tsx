@@ -49,7 +49,7 @@ const GameCarousel = () => {
       <Slider {...settings} 
         >
         {games.map((game, index) => (
-          <div key={game.id} style={{ padding: "0 15px", position: "relative" }}>
+          <div key={game.id} style={{  position: "relative" }}>
             {/* Número do ranking */}
             <div
               style={{
@@ -100,6 +100,7 @@ const GameCarousel = () => {
               >
                 {game.name} 
               </h1>
+       
               <h1
                 style={{
                   position: "absolute",
