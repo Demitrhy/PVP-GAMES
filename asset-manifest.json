@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/PVP-GAMES/static/css/main.99954e79.css",
+    "main.js": "/PVP-GAMES/static/js/main.2c9682da.js",
+    "static/js/453.7a42a5af.chunk.js": "/PVP-GAMES/static/js/453.7a42a5af.chunk.js",
+    "index.html": "/PVP-GAMES/index.html",
+    "main.99954e79.css.map": "/PVP-GAMES/static/css/main.99954e79.css.map",
+    "main.2c9682da.js.map": "/PVP-GAMES/static/js/main.2c9682da.js.map",
+    "453.7a42a5af.chunk.js.map": "/PVP-GAMES/static/js/453.7a42a5af.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.99954e79.css",
+    "static/js/main.2c9682da.js"
+  ]
+}
