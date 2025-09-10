@@ -1,9 +1,9 @@
-name: Deploy React app to GitHub Pages
+name: Deploy
 
 on:
   push:
-    branches: ["Master"]   # roda sempre que houver push na main
-  workflow_dispatch:      # permite rodar manualmente no Actions
+    branches: ["Master"]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -17,6 +17,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+     run:
+        working-directory: ./pvp-games  
     steps:
       - name: Checkout código
         uses: actions/checkout@v4
@@ -25,6 +27,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
+
+      - name: Atualizar NPM para versão 9+
+        run: npm install -g npm@9
 
       - name: Instalar dependências
         run: npm ci
@@ -35,7 +40,7 @@ jobs:
       - name: Upload build para deploy
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './build'
+          path: './pvp-games/build' 
 
   deploy:
     environment:
