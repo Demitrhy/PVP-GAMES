@@ -28,7 +28,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-   "homepage": "https://demitrhy.github.io/PVP-GAMES/",
+   "homepage": "https://demitrhy.github.io/PVP-GAMES/ ",
 
   "eslintConfig": {
     "extends": [
