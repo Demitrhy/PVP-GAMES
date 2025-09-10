@@ -26,8 +26,11 @@ jobs:
         with:
           node-version: '18'
 
+      - name: Atualizar NPM para versão 9+
+        run: npm install -g npm@9
+
       - name: Instalar dependências
-        run: npm install
+        run: npm ci
 
       - name: Build do projeto
         run: npm run build
