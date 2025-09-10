@@ -2,8 +2,8 @@ name: Deploy
 
 on:
   push:
-    branches: ["Master"]   # roda sempre que houver push na main
-  workflow_dispatch:      # permite rodar manualmente no Actions
+    branches: ["Master"]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -27,7 +27,7 @@ jobs:
           node-version: '18'
 
       - name: Instalar dependências
-        run: npm ci
+        run: npm install
 
       - name: Build do projeto
         run: npm run build
