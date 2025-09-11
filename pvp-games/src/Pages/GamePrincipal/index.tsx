@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { GameCard } from "../GameCard";
-import GameCarrosel from "../GameCarrosel";
 
 const games = [
     {
