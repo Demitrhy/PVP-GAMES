@@ -43,7 +43,7 @@ const GameCarrosel = () => {
         margin: "80px auto",
         position: "relative",
         backgroundColor: "#181818",
-
+        border: "2px solid #ffb700",
       }}
     >
       {/* Título */}
