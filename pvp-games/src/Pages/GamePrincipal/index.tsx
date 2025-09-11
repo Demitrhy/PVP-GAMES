@@ -4,17 +4,17 @@ import { GameCard } from "../GameCard";
 const games = [
     {
         name: "GTA V",
-        image: "/images/gtaV.jpg",
+        imagem: process.env.PUBLIC_URL + "/images/gtaV.jpg",
         description: "Ação e aventura em mundo aberto",
     },
     {
         name: "Minecraft",
-        image: "/images/minecraft.jpg",
+        imagem: process.env.PUBLIC_URL + "/images/minecraft.jpg",
         description: "Criatividade e sobrevivência em blocos",
     },
     {
         name: "Genshin Impact",
-        image: "/images/genshinImpact.jpg",
+        imagem: process.env.PUBLIC_URL + "/images/genshinImpact.jpg",
         description: "Aventure-se em Teyvat, um vasto mundo cheio de mistérios.",
     },
 ];
@@ -31,7 +31,7 @@ const GamePrincipal = () => {
                 display: "flex",
                 flexDirection: "column",
                 margin: "0 auto",
-                
+
             }}
         >
 
@@ -97,7 +97,7 @@ const GamePrincipal = () => {
                 style={{
                     position: "absolute",
                     inset: 0,
-                    backgroundImage: `url(${selectedGame.image})`,
+                    backgroundImage: `url(${selectedGame.imagem})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
