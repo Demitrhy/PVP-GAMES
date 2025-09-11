@@ -17,8 +17,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-     run:
-        working-directory: ./pvp-games  
+    defaults:
+       run:
+        working-directory: ./pvp-games 
     steps:
       - name: Checkout código
         uses: actions/checkout@v4
