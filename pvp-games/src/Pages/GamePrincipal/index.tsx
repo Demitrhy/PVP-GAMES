@@ -4,17 +4,17 @@ import { GameCard } from "../GameCard";
 const games = [
     {
         name: "GTA V",
-        imagem: process.env.PUBLIC_URL + "/images/gtaV.jpg",
+        imagem: "/images/gtaV.jpg",
         description: "Ação e aventura em mundo aberto",
     },
     {
         name: "Minecraft",
-        imagem: process.env.PUBLIC_URL + "/images/minecraft.jpg",
+        imagem: "/images/minecraft.jpg",
         description: "Criatividade e sobrevivência em blocos",
     },
     {
         name: "Genshin Impact",
-        imagem: process.env.PUBLIC_URL + "/images/genshinImpact.jpg",
+        imagem: "/images/genshinImpact.jpg",
         description: "Aventure-se em Teyvat, um vasto mundo cheio de mistérios.",
     },
 ];
