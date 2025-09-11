@@ -1,16 +1,16 @@
 import { useRef, useState } from "react";
 
 const jogos = [
-  { id: 1, nome: "Need for Speed Underground 2", imagem: "/images/Need-For-Speed-Underground-2.jpg" },
-  { id: 2, nome: "Forza Horizon 5", imagem: "/images/Forza-Horizon-5-1.jpg" },
-  { id: 3, nome: "Homem Aranha 2", imagem: "/images/HomemAranha.jpg" },
-  { id: 4, nome: "Resident Evil 4 Remake", imagem: "/images/Resident.avif" },
-  { id: 5, nome: "God of War Ragnarok", imagem: "/images/God_of_War_Ragnarök_capa.jpg" },
-  { id: 6, nome: "Grand Theft Auto VI", imagem: "/images/gta6_2CSKANR.jpg" },
-  { id: 7, nome: "Fall Guys", imagem: "/images/FallGuys.png" },
-  { id: 8, nome: "God of War 3", imagem: "/images/god3.jpg" },
-  { id: 9, nome: "FC 2024", imagem: "/images/Fifia24.jpg" },
-  { id: 10, nome: "Red Dead Redemption 2", imagem: "/images/Red-Dead-Redemption-2-Cover.webp" },
+  { id: 1, nome: "Need for Speed Underground 2", imagem: process.env.PUBLIC_URL + "/images/Need-For-Speed-Underground-2.jpg" },
+  { id: 2, nome: "Forza Horizon 5", imagem: process.env.PUBLIC_URL + "/images/Forza-Horizon-5-1.jpg" },
+  { id: 3, nome: "Homem Aranha 2", imagem: process.env.PUBLIC_URL + "/images/HomemAranha.jpg" },
+  { id: 4, nome: "Resident Evil 4 Remake", imagem: process.env.PUBLIC_URL + "/images/Resident.avif" },
+  { id: 5, nome: "God of War Ragnarok", imagem: process.env.PUBLIC_URL + "/images/God_of_War_Ragnarök_capa.jpg" },
+  { id: 6, nome: "Grand Theft Auto VI", imagem: process.env.PUBLIC_URL + "/images/gta6_2CSKANR.jpg" },
+  { id: 7, nome: "Fall Guys", imagem: process.env.PUBLIC_URL + "/images/FallGuys.png" },
+  { id: 8, nome: "God of War 3", imagem: process.env.PUBLIC_URL + "/images/god3.jpg" },
+  { id: 9, nome: "FC 2024", imagem: process.env.PUBLIC_URL + "/images/Fifia24.jpg" },
+  { id: 10, nome: "Red Dead Redemption 2", imagem: process.env.PUBLIC_URL + "/images/Red-Dead-Redemption-2-Cover.webp" },
 ];
 
 const GameCarrosel = () => {

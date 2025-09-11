@@ -2,7 +2,7 @@ import React from "react";
 
 interface Game {
   name: string;
-  image: string;
+  imagem: string;
 }
 
 interface GameCardProps {
@@ -41,7 +41,7 @@ export const GameCard: React.FC<GameCardProps> = ({ game, onSelect, isSelected }
       }}
     >
       <img
-        src={game.image}
+        src={game.imagem}
         alt={game.name}
         style={{
           width: "100%",
